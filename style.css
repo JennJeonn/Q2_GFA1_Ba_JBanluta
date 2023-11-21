@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 10px;
+    background-color: #f34f75;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(248, 83, 185), 205, 212;
+}
+
+nav a{
+    color: rgb(248, 83, 185), 205, 212;
+}
+
+footer{
+    position: fixed;
+    justify-content: space-around;
+    left: 0;
+    bottom: 0;
+    gap: 10px;
+}
+
+section{
+    margin: 10px;
+    padding: 10px;
+}
+article{
+    color: beige;
+}
+.icon{
+    background: url(Media/sprite3.png.png) no-repeat;
+    display: inline-block;
+    width: 66px;
+    height: 66px;
+}
+
+#Twitter{
+    background-position: -66px -72px;
+}
+
+#Youtube{
+    background-position: -439px -221px;
+}
+
+#Facebook{
+    background-position: -439px -146px;
+}
+
+#Instagram{
+    background-position: -290px -221px;
+}
+html, body{width: 100vw;}
+a{text-decoration: none;}
+#bgvid{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+@media screen and (max-width: 640px){
+    .button{
+        background-color: rgb(255, 167, 215);
+        color: white;
+        padding: 1vw;
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+
+    .items{
+        display: none;
+        position: absolute;
+        background-color: #f34f75;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    }
+
+    .items a{
+        color: rgb(248, 83, 185), 205, 212;
+        padding: 12px 16 px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .items a:hover{
+        background-color: #cdd5d1;
+    }
+    
+    .dropdown:hover .items{
+        display: block;
+    }
+
+    .dropdown:hover .button{
+        background-color: #946e83;
+    }
+}
